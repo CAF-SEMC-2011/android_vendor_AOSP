@@ -1,11 +1,11 @@
 # Inherit AOSP device configuration for hallon
 $(call inherit-product-if-exists, device/semc/hallon/full_hallon.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP
+$(call inherit-product, vendor/AOSP/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_hallon
+PRODUCT_NAME := AOSP_hallon
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := hallon
 PRODUCT_MODEL := Xperia Neo

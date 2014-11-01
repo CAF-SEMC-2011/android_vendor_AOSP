@@ -1,11 +1,11 @@
 # Inherit AOSP device configuration for Xperia Neo V
 $(call inherit-product-if-exists, device/semc/haida/full_haida.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP
+$(call inherit-product, vendor/AOSP/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_haida
+PRODUCT_NAME := AOSP_haida
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := haida
 PRODUCT_MODEL := Xperia Neo V

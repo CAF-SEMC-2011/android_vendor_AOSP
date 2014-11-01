@@ -1,12 +1,12 @@
 # Inherit AOSP device configuration for urushi
 $(call inherit-product-if-exists, device/semc/urushi/full_urushi.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP 
+$(call inherit-product, vendor/AOSP/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_urushi
-PRODUCT_BRAND := SEMC
+PRODUCT_NAME := AOSP_urushi
+PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := urushi
 PRODUCT_MODEL := Xperia Ray
 PRODUCT_MANUFACTURER := SEMC

@@ -1,12 +1,12 @@
 # Inherit AOSP device configuration for satsuma
 $(call inherit-product-if-exists, device/semc/satsuma/full_satsuma.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP
+$(call inherit-product, vendor/AOSP/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_satsuma
-PRODUCT_BRAND := SEMC
+PRODUCT_NAME := AOSP_satsuma
+PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := satsuma
 PRODUCT_MODEL := Xperia Active
 PRODUCT_MANUFACTURER := SEMC

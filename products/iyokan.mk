@@ -1,12 +1,12 @@
 # Inherit AOSP device configuration for iyokan
 $(call inherit-product-if-exists, device/semc/iyokan/full_iyokan.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP
+$(call inherit-product, vendor/AOSP/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_iyokan
-PRODUCT_BRAND := SEMC
+PRODUCT_NAME := AOSP_iyokan
+PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := iyokan
 PRODUCT_MODEL := Xperia Pro
 PRODUCT_MANUFACTURER := SEMC

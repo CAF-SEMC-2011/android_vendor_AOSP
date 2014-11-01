@@ -1,11 +1,11 @@
 # Inherit AOSP device configuration for coconut
 $(call inherit-product-if-exists, device/semc/coconut/full_coconut.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP
+$(call inherit-product, vendor/AOSP/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_coconut
+PRODUCT_NAME := AOSP_coconut
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := coconut
 PRODUCT_MODEL := Live With Walkman
@@ -22,10 +22,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="WT19i" BUILD_FINGERPRINT="SEMC/WT1
 
 PRODUCT_PACKAGES += \
     Mms \
-
-
-
-
-
-
-

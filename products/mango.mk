@@ -1,12 +1,12 @@
 # Inherit AOSP device configuration for mango
 $(call inherit-product-if-exists, device/semc/mango/full_mango.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP
+$(call inherit-product, vendor/PolishBlood/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_mango
-PRODUCT_BRAND := SEMC
+PRODUCT_NAME := AOSP_mango
+PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := mango
 PRODUCT_MODEL := Xperia Mini Pro
 PRODUCT_MANUFACTURER := SEMC

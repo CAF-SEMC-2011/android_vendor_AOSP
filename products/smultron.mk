@@ -1,12 +1,12 @@
 # Inherit AOSP device configuration for smultron
 $(call inherit-product-if-exists, device/semc/smultron/full_smultron.mk)
 
-# Inherit common device configuration for PolishBlood Project 
-$(call inherit-product, vendor/PolishBlood/common_PolishBlood.mk)
+# Inherit common device configuration for AOSP
+$(call inherit-product, vendor/AOSP/common_AOSP.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := PolishBlood_smultron
-PRODUCT_BRAND := SEMC
+PRODUCT_NAME := AOSP_smultron
+PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := smultron
 PRODUCT_MODEL := Xperia Mini
 PRODUCT_MANUFACTURER := SEMC
